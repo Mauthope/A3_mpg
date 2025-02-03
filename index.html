@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard A3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div id="login-container">
+        <h1>Login do Sistema A3</h1>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <select id="setor-select">
+            <option value="">Selecione o setor</option>
+            <option value="Laminação">Laminação</option>
+            <option value="Impressão">Impressão</option>
+            <option value="Acabamento">Acabamento</option>
+            <option value="Soldada">Soldada</option>
+            <option value="Corte BB">Corte BB</option>
+            <option value="Corte e Solda">Corte e Solda</option>
+            <option value="Carimbadeira">Carimbadeira</option>
+            <option value="Logística">Logística</option>
+            <option value="Apontamento">Apontamento</option>
+            <option value="Expedição">Expedição</option>
+            <option value="Manutenção">Manutenção</option>
+        </select>
+        <p></p>
+        <button id="login-btn" class="btn-adicionar">Entrar</button>
+        <button id="register-btn" class="btn-adicionar">Registrar</button>
+    </div>
+
+    <div id="a3-container" style="display: none;">
+      
+        <h1>Dashboard A3 - <span id="setor-title"></span></h1>
+      
+
+      
+        <section id="requisitos-negocio">
+            <h2>Requisitos de Negócio</h2>
+            <div class="requisitos-wrapper">
+                <ul id="requisitos-list" class="requisitos-list">
+                    <!-- Requisitos serão adicionados dinamicamente -->
+                </ul>
+            </div>
+            <button id="add-requisito" class="btn-adicionar">Adicionar Tópico</button>
+        </section>
+
+        <div class="situacao-container">
+            <div class="situacao-atual">
+                <h2>Situação Atual</h2>
+                <div class="table-wrapper">
+                    <table id="situacao-atual-table">
+                        <thead>
+                            <tr>
+                                <th>Indicadores</th>
+                                <th>Meta</th>
+                                <th>OBJ. Futuro</th>
+                                <th>Realizado ano anterior</th>
+                            </tr>
+                        </thead>

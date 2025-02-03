@@ -1,0 +1,266 @@
+/* Container de login */
+#login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+/* Adicionar estilos para os campos de login */
+#login-container input[type="email"],
+#login-container input[type="password"]
+ {
+  max-width: 1000px;
+  min-width: 365px;
+  margin: 7px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f0f0, #dfe9f3);
+  color: #333;
+}
+
+/* Container principal A3 */
+#a3-container {
+  width: 400mm;
+  min-height: 210mm;
+  margin: 20px auto;
+  padding: 15mm;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Títulos */
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Lista de requisitos */
+.requisitos-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.requisitos-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.requisitos-list input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* Botões */
+.btn-remover,
+.btn-adicionar {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-remover {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-adicionar {
+  background: #27ae60;
+  color: white;
+}
+
+.btn-remover:hover {
+  background: #c0392b;
+}
+
+.btn-adicionar:hover {
+  background: #219150;
+}
+
+/* Container de situação */
+.situacao-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.situacao-atual,
+.situacao-alvo {
+  flex: 1;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+
+
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  min-width: 10px;
+}
+
+th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+/* Tamanho específico para a coluna de ação */
+th.col-acao,
+td.col-acao {
+  width: 500px;
+  min-width: 80px;
+}
+
+/* Tamanho específico para a coluna de ação */
+th.obj,
+td.obj {
+  width: 55px;
+  min-width: 10px;
+}
+
+/* Tamanho específico para a coluna de ação */
+th.meta,
+td.meta {
+  width: 55px;
+  min-width: 10px;
+}
+/* Tamanho específico para a coluna de ação */
+th.status,
+td.status {
+  width: 125px;
+  min-width: 10px;
+}
+
+/* Inputs e selects dentro das tabelas */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Botões de ação */
+#save-btn,
+#logout-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#save-btn {
+  background: #27ae60;
+  color: white;
+}
+
+#logout-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+#save-btn:hover {
+  background: #219150;
+}
+
+#logout-btn:hover {
+  background: #c0392b;
+}
+
+/* Ajustes para telas pequenas */
+@media screen and (max-width: 768px) {
+  #a3-container {
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .situacao-container {
+    flex-direction: column;
+  }
+}
+
+/* Cores para a tabela de Indicadores */
+.cor-verde {
+  background: #2ecc71 !important;
+  color: white !important;
+}
+
+.cor-laranja {
+  background: #f39c12 !important;
+  color: white !important;
+}
+
+.cor-vermelho {
+  background: #e74c3c !important;
+  color: white !important;
+}
+
+/* Ajustes para impressão */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  #a3-container {
+    width: 100%;
+    padding: 10mm;
+    box-shadow: none;
+  }
+  
+  .btn-adicionar,
+  .btn-remover,
+  #save-btn,
+  #logout-btn {
+    display: none;
+  }
+}
